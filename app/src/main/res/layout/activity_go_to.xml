@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/fchooser_bg"
+    android:layout_height="match_parent"
+    tools:context=".GoToActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        fontPath="fonts/Raleway-Bold.ttf"
+        android:textStyle="bold"
+        android:text="Go to Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gtheader"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingPrefix" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <SeekBar
+        android:min="1"
+        android:id="@+id/gtsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        fontPath="fonts/Raleway-Bold.ttf"
+        android:textAlignment="center"
+        android:text="0/"
+        android:id="@+id/gtindic"
+
+        tools:ignore="MissingPrefix" />
+
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selected Page Number"
+        android:textAlignment="center"
+        android:id="@+id/eselpage"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Button
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/fchooser_btn_bg"
+            android:textColor="#212F3D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:id="@+id/gtselect"/>
+        <Button
+            android:background="@drawable/fchooser_btn_bg"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:textColor="#212F3D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/gtcancel"/>
+    </LinearLayout>
+
+</LinearLayout>

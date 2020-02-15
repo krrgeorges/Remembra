@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remembra"
+                android:id="@+id/app_head"
+                fontPath="fonts/Raleway-ExtraBold.ttf"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"
+                tools:ignore="MissingPrefix" />
+
+            <ImageButton
+                android:id="@+id/settings"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_settings_white_24dp"/>
+
+            <ImageButton
+                android:id="@+id/about"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_info_outline_white_24dp"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:text="GET"
+                    android:textSize="18sp"
+                    fontPath="fonts/Raleway-Bold.ttf"
+                    android:id="@+id/getty"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_btn"
+                    tools:ignore="MissingPrefix" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/converty"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:text="Convert"
+                    android:textSize="18sp"
+                    fontPath="fonts/Raleway-Bold.ttf"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_btn"
+                    tools:ignore="MissingPrefix" />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/lod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/Raleway-Bold.ttf"
+            android:text="Last Opened Document"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            tools:ignore="MissingPrefix" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!--<LinearLayout-->
+        <!--<TextView-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:text="The Winds Of Winter"/>-->
+        <!--<Space-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dp" />-->
+        <!--<TextView-->
+        <!--android:textColor="@color/black"-->
+        <!--fontPath="fonts/Raleway-SemiBold.ttf"-->
+        <!--tools:ignore="MissingPrefix"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="storage/emulated/0/Downloads/"/>-->
+        <!--</LinearLayout>-->
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:paddingBottom="15dp"
+                android:orientation="vertical">
+                <TextView
+                    fontPath="fonts/Raleway-Bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="Nothing to show"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/rod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/Raleway-Bold.ttf"
+            android:text="Recently Opened Documents"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            tools:ignore="MissingPrefix" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/recents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        fontPath="fonts/Raleway-Bold.ttf"
+                        tools:ignore="MissingPrefix"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:text="Nothing to show"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

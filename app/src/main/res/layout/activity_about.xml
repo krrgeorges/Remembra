@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:id="@+id/a_head"
+            fontPath="fonts/Raleway-ExtraBold.ttf"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            tools:ignore="MissingPrefix" />
+
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:background="@drawable/filerec_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+        <TextView
+            fontPath="fonts/Raleway-Bold.ttf"
+            tools:ignore="MissingPrefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Open Dyslexic TypeFace"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:textColor="@color/black"
+            fontPath="fonts/Raleway-SemiBold.ttf"
+            android:textSize="16sp"
+            tools:ignore="MissingPrefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OpenDyslexic is a free typeface/font designed to mitigate some of the common reading errors caused by dyslexia. Like many dyslexia-intervention typefaces, most notably Dyslexie, OpenDyslexic adds to dyslexia research and is a reading aid, but it is not a cure for dyslexia. It notably helps in dyslexia induced errors."/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:background="@drawable/filerec_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+        <TextView
+            fontPath="fonts/Raleway-Bold.ttf"
+            tools:ignore="MissingPrefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Sans Forgetica TypeFace"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            fontPath="fonts/Raleway-SemiBold.ttf"
+            tools:ignore="MissingPrefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sans forgetica is a variation of a sans-serif typeface, designed to assist students in retaining the information which they read. Back-slanted and with gaps in the letter forms, the typeface is designed to reduce legibility; it adds reading complexity to learning tasks based on the psychological principle known as desirable difficulty. Such added complexity may help learners with their reading comprehension and interpretation of information."/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

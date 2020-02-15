@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/v_main"
+    tools:context=".ViewerActivity">
+
+
+
+
+    <WebView
+        android:id="@+id/viewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+
+
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+
+        android:id="@+id/drawer"
+        android:background="@drawable/drawer_bg"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        >
+        <ImageButton
+            android:paddingLeft="-10dp"
+            android:layout_weight="1"
+            android:id="@+id/vleft"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+        <ImageButton
+            android:id="@+id/v_settings"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_settings_blue_24dp"/>
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/vgoto"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_made_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/vsearch"
+
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/vimage"
+
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_image_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/vright"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_right_blue_24dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/v_seter"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/loady_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/Raleway-Bold.ttf"
+            android:text="Font Selection"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            tools:ignore="MissingPrefix" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                tools:ignore="MissingPrefix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Open Dyslexic"
+                android:id="@+id/vod"
+                android:background="@drawable/fchooser_btn_bg"
+                fontPath="fonts/OpenDyslexic-Regular.ttf"
+                android:layout_margin="2dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+            <Button
+                android:background="@drawable/fchooser_btn_bg"
+                android:id="@+id/vsf"
+                android:textColor="@color/black"
+                tools:ignore="MissingPrefix"
+                fontPath="fonts/SansForgetica-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sans Forgetica"
+                android:layout_marginTop="1dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/Raleway-Bold.ttf"
+            android:text="Background Selection"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            tools:ignore="MissingPrefix" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:tag="#FDFEFE"
+                android:id="@+id/vc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/vc2"
+                android:tag="#17202A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/vc3"
+                android:tag="#2C3E50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/vc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="#424949"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/vc5"
+                android:tag="#c99868"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/vc6"
+                android:tag="#34495E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/Raleway-Bold.ttf"
+            android:text="Font Size Selection"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            tools:ignore="MissingPrefix" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <SeekBar
+            android:id="@+id/vfsize"
+            android:max="60"
+            android:min="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:padding="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Page 34"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/vpage"
+        fontPath="fonts/Raleway-Bold.ttf"
+        android:textColor="#E5E7E9"
+        android:background="@drawable/fchooser_bg"
+        tools:ignore="MissingPrefix" />
+
+
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:visibility="gone"
+            android:id="@+id/testy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:scaleType="fitCenter" />
+    <ImageButton
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="1"
+        android:id="@+id/testy_c"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancel_black_24dp"/>
+
+
+    <ImageButton
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:id="@+id/testy_l"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_arrow_left_purple_24dp"/>
+
+    <ImageButton
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="1"
+        android:id="@+id/testy_r"
+        android:background="@null"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_arrow_right_purple_24dp"/>
+
+
+
+
+</RelativeLayout>

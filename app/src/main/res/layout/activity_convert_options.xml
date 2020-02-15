@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/fchooser_bg"
+    android:layout_height="match_parent"
+    tools:context=".ConvertOptionsActivity">
+
+    <Button
+        android:layout_margin="2dp"
+        android:background="@drawable/fchooser_btn_bg"
+        android:textColor="#212F3D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert Text"
+        android:id="@+id/ctext"/>
+
+    <Space
+
+        android:layout_height="5dp"
+        android:layout_width="match_parent"/>
+
+    <Button
+        android:layout_margin="2dp"
+        android:background="@drawable/fchooser_btn_bg"
+        android:textColor="#212F3D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert Files"
+        android:id="@+id/cfiles"/>
+
+</LinearLayout>
